@@ -126,6 +126,7 @@ const chainSearch = async () => {
     .sort({name: "asc"})
     .limit(2)
     .select("-age")
+    .exec()
     console.log(data);
   } catch (err) {
     handleError(err);
